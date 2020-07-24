@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+#all {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/bg2cela.jpg);
+	font-family:"Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+	font-size:15px;
+	}
+#header {
+	height: 260px;
+	background-image: url(images/bg1cela.jpg);
+}
+#left {
+	width: 230px;
+	float: left;/* float  用來定義區塊的浮動 */
+}
+#content {
+	width: 510px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	float: left;
+}
+#Right {
+	padding-top: 10px;
+	padding-left: 25px;
+	width: 150px;
+	float: left;
+	color: rgb(20, 4, 4);
+	
+}
+#footer {
+	height: 70px;
+	color: #faf8f2;
+	clear: both; /* clear要清除上面置右的規格 */
+	background-image: url(images/bg3cela.jpg);
+	text-align: center;
+	padding-top: 20px;
+}
+#div2 {
+	border: 1px solid #9A090B;
+	background-color: #FAB2B3;
+	width: 200px;
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	border-radius: 20px 0px 0px 20px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	-webkit-box-shadow: 5px 5px 5px #000000;
+	box-shadow: 5px 5px 5px #000000;
+	-webkit-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+	-webkit-opacity: 0.3;
+	opacity: 0.3;
+}
+	#div2:hover {
+		-webkit-opacity: 1.0;
+		opacity: 1.0;
+	
+	
+}
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11pt;
+	background-color: #faf8f2;/* 對應延伸images/bg2.jpg的底色 */
+	margin-top: 32px;
+}
+h1 {
+	font-size: 17pt;
+	font-color:#531404;
+}
+.font-style1 {
+	color: #fe6e2f;
+	font-weight: bold;
+}
+.img-style1 { /* 圖片樣式 */
+	border: 2px dotted #292727;
+}
+.img-style2 { /* 圖片樣式 */
+	border: 3px solid #ffffff;
+}
+a:link {
+	color: rgb(66, 50, 4);
+}
+a:visited {
+	color: #590304;
+}
+a:hover {
+	background-color: #531404;
+	color: #fff;
+}
+a:active {/* 點下去的效果 較為短暫*/
+	color: #a3ef4b;
+}
+#left ul li {  /* 左邊選單 置換自訂*/
+	font-size: 11pt;
+	padding-top: 7px;
+	padding-right: 5px;
+	padding-left: 10px;
+	padding-bottom: 7px;
+	width: 150px;
+
+	
+}
