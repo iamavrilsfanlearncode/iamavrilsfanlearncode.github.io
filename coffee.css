@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 656px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+
+/* Tablet Layout: 657px to 950px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 657px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+.gridContainer.clearfix #select {
+	border: 1px solid #FFFFFF;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	width: 250px;
+	margin: auto;
+}
+.gridContainer.clearfix #select:hover {
+	background-color: #FF9403;
+}
+#Coffee1,#Coffee2 {
+	float: left;
+	width: 250px;
+	margin-left: 20px;
+}
+#Coffee3,#Coffee4,#Coffee5,#Coffee6 {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+}
+#BackToTop,#footer{
+	clear: both;
+}
+}
+
+/* Desktop Layout: 951px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 951px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+.gridContainer.clearfix #Coffee .inner {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.gridContainer.clearfix #select {
+	border: 7px solid #FFFFFF;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	width: 250px;
+	margin: auto;
+}
+.gridContainer.clearfix #select:hover {
+	background-color: #FF9403;
+}
+#Coffee1,#Coffee2,#Coffee3 {
+	float: left;
+	width: 250px;
+	margin-left: 20px;
+}
+#Coffee4,#Coffee5,#Coffee6 {
+	float: left;
+	width: 250px;
+	margin-right: 20px;
+}
+#BackToTop,#footer{
+	clear: both;
+}
+}
